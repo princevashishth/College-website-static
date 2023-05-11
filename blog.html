@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website design</title>
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">      
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="about.html">ABOUT</a> </li>
+                        <li><a href="course.html">COURSE</a> </li>
+                        <li><a href="blog.html">BLOGS</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our certificate and online programs for 2023</h1> 
+        </section>
+        
+        <!-- Blog page content-->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg" >
+                    <h2>Our certificate and online programs for 2023</h2>
+                    <p>Lorem ipsum</p>
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter name">
+                            <input type="email" placeholder="Enter email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <!--PLEASE LOOK HERE . They might be using inheritance-->
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Machine learning</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>21</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem Ipsum</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Prince</p>
+        </section>
+
+
+        <!--- Javascript for toggle menu in mobile phone-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
